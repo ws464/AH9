@@ -16,7 +16,7 @@ class Node<T> {
         s.push(head);
         head=head.next;
       }
-      System.out.println(s.toString());
+      //System.out.println(s.toString());
       if(s.isEmpty()){
         return null;
       }
