@@ -10,12 +10,18 @@ class Node<T> {
 
 class ECSource {
   public static <T> boolean isUnivalueList(Node<T> head) {
-    // todo
-    return true;
+    boolean ret = true;
+    while(head.next!=null){
+      ret = (head.val.equals(head.next.val));
+      head=head.next;
+    }
+    return ret;
   }
 
   public static void main(String[] args) {
-        Node<String> z = new Node<>("z");
+        Node<String> z = new Node<String>("z");
+        Node<String> y = new Node<String>("z");
+        z.next=y;
         // z
 
         // Printing solution
